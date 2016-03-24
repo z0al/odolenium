@@ -1,8 +1,8 @@
-========
-Selenado
-========
+=========
+Odolenium
+=========
 
-This is the documentation of **Selenado**.
+This is the documentation of **Odolenium**.
 
 .. note::
 

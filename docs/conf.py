@@ -61,7 +61,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Selenado'
+project = u'Odolenium'
 copyright = u'2016, ahmed_taj'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -128,7 +128,7 @@ html_theme = 'sphinx_rtd_theme'
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
 try:
-    from selenado import __version__ as version
+    from odolenium import __version__ as version
 except ImportError:
     pass
 else:
@@ -193,7 +193,7 @@ html_static_path = ['_static']
 # html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'selenado-doc'
+htmlhelp_basename = 'odolenium-doc'
 
 
 # -- Options for LaTeX output --------------------------------------------------
@@ -212,7 +212,7 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'user_guide.tex', u'Selenado Documentation',
+  ('index', 'user_guide.tex', u'Odolenium Documentation',
    u'ahmed_taj', 'manual'),
 ]
 

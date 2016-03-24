@@ -1,27 +1,27 @@
-# Selenadoo
+# Odolenium
 
 ## Introduction
 
-Selenadoo is a simple, API to interact with [Odoo](http://odoo.com) using 
+Odolenium is a simple, API to interact with [Odoo](http://odoo.com) using 
 [Selenium](http://seleniumhq.org) web driver.
 
 ## Getting started
 
-You should have Python 3 installed in order to use Selenadoo, then follow the 
+You should have Python 3 installed in order to use Odolenium, then follow the 
 steps bellow:
 
 * Clone this repository using git
 ```sh
-$ git clone https://gitlab.com/ahmed_taj/selenadoo.git
+$ git clone https://gitlab.com/ahmed_taj/odolenium.git
 ```
 
-* Then, change to selenadoo directory and install selenadoo
+* Then, change to odolenium directory and install it
 ```sh
-$ cd selenadoo
+$ cd odolenium
 $ python setup.py install
 ```
 
-* If everything went fine, you should now be able to import and use selenado.
+* If everything went fine, you should now be able to import and use odolenium.
 
 ## Examples
 
