@@ -17,9 +17,9 @@ $ git clone https://gitlab.com/ahmed_taj/selenadoo.git
 
 * Then, change to selenadoo directory and install selenadoo
 ```sh
-$ cd selenado
+$ cd selenadoo
 $ python setup.py install
-``
+```
 
 * If everything went fine, you should now be able to selenado.
 
