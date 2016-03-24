@@ -21,7 +21,7 @@ $ cd selenadoo
 $ python setup.py install
 ```
 
-* If everything went fine, you should now be able to selenado.
+* If everything went fine, you should now be able to import and use selenado.
 
 ## Examples
 
