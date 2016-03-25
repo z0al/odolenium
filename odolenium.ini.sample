@@ -1,0 +1,4 @@
+[odolenium]
+url=http://localhost:8069
+log_level=INFO
+admin_password=admin
