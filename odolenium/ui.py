@@ -78,7 +78,7 @@ class OdooUI(object):
             log.critical("{}".format(er))
             raise OdoleniumError("{}".format(er))
 
-        log.info("Logged in as '{}'".format(self.rpc.user))
+        log.info("Logged in as '{}' to database '{}'".format(self.rpc.user, db))
 
         log.info("Searching for 'web_selenium' module")
         module_list = self.rpc.modules("web_selenium")
@@ -87,9 +87,9 @@ class OdooUI(object):
             log.error("Can't locate 'web_selenium' module in database '{}'".format(db))
         else:
             if "web_selenium" in module_list.get("installed",[]):
-                log.info("module 'web_selenium' is installed")
+                log.info("Module 'web_selenium' is installed")
             else:
-                log.info("tying to install module 'web_selenium'")
+                log.info("Trying to install module 'web_selenium'")
                 self.rpc.install("web_selenium")
                 log.info("Done")
 
