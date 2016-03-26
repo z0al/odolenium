@@ -7,5 +7,5 @@ try:
 except:
     __version__ = 'unknown'
 
-from .ui import *
-from .error import *
+from .ui import *       # noqa
+from .error import *    # noqa

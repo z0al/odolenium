@@ -1,7 +1,7 @@
 #! python3
 # -*- coding: utf-8 -*-
 from urllib.parse import urlparse
-import sys
+
 
 def parse_url(url):
     """
@@ -11,6 +11,7 @@ def parse_url(url):
     if not r.scheme or not r.netloc:
         return None
     return r
+
 
 def urlgen(url, path=""):
     """

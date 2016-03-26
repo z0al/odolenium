@@ -5,10 +5,10 @@ import os
 import sys
 import logging
 
-from .error import *
+import odolenium.error as error
 
 
-__all__ = ["loadconfig","log"]
+__all__ = ["loadconfig", "log"]
 
 format = "%(asctime)s %(levelname)s %(name)s: %(message)s"
 
@@ -19,6 +19,7 @@ defaults = {
     "admin_password": "admin",
     "log_level": "INFO",
 }
+
 
 def loadconfig(config):
     global defaults
@@ -33,12 +34,12 @@ def loadconfig(config):
         if "odolenium" in reader.sections():
             defaults.update(reader["odolenium"])
         else:
-            raise OdoleniumError("No [odolenium] section presents in '{}'".format(config))
+            raise error.OdoleniumError("No [odolenium] section presents in '{}'".format(config))
 
     else:
-        raise OdoleniumError("No such configration file '{}'".format(config))
+        raise error.OdoleniumError("No such configration file '{}'".format(config))
 
     # setting up
-    logging.basicConfig(format=format,level=logging._nameToLevel[defaults["log_level"]], stream=sys.stdout)
+    logging.basicConfig(format=format, level=logging._nameToLevel[defaults["log_level"]], stream=sys.stdout)
 
     return defaults

@@ -5,6 +5,7 @@ import contextlib
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support.expected_conditions import staleness_of
 
+
 @contextlib.contextmanager
 def for_page_load(browser, timeout=30):
     """

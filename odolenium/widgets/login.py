@@ -1,6 +1,5 @@
 #! python3
 # -*- coding: utf-8 -*-
-from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 
 from odolenium.widgets.db import DatabaseWidget
@@ -14,9 +13,10 @@ class LoginWidget(object):
         "/web/database/manager",
         "/web/database/selector"
     ]
-    def __init__(self,driver, server_ver):
 
-        self.url =  util.parse_url(driver.current_url)
+    def __init__(self, driver, server_ver):
+
+        self.url = util.parse_url(driver.current_url)
 
         assert self.url.path.rstrip("/") in LoginWidget.allowed_urls
 
