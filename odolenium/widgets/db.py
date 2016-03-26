@@ -7,6 +7,9 @@ import odolenium.wait as wait
 
 
 class DatabaseWidget(object):
+    """
+    Represents database selection page or component
+    """
     db_urls = [
         # v9
         "/web/database/manager",

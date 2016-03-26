@@ -8,6 +8,9 @@ import odolenium.wait as wait
 
 
 class LoginWidget(object):
+    """
+    Represents login form
+    """
     allowed_urls = [
         "/web/login",
         "/web/database/manager",
