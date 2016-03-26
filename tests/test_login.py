@@ -11,7 +11,7 @@ class TestLogin(unittest.TestCase):
         self.ui = OdooUI(
             Firefox(),
             {
-                'url': 'http://localhost:9000',
+                'url': 'http://localhost:8069',
                 'admin_password':'admin',
                 'log_level':'INFO'
             }
@@ -19,7 +19,7 @@ class TestLogin(unittest.TestCase):
 
     def test_one(self):
         self.ui.login('admin','admin','db1')
-        assert self.ui.driver.current_url.startswith('http://localhost:9000/web')
+        assert self.ui.driver.current_url.startswith('http://localhost:8069/web')
 
     def test_two(self):
         try:
@@ -29,7 +29,7 @@ class TestLogin(unittest.TestCase):
 
 
     def tearDown(self):
-        self.ui.driver.quit()
+        self.ui.close()
 
 
 

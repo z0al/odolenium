@@ -1,3 +1,5 @@
+#! python3
+# -*- coding: utf-8 -*-
 from urllib.parse import urlparse
 import sys
 
@@ -9,3 +11,13 @@ def parse_url(url):
     if not r.scheme or not r.netloc:
         return None
     return r
+
+def urlgen(url, path=""):
+    """
+    Generate URL.
+    """
+    base = "://".join([url.scheme, url.netloc])
+    return u"{base:s}/{path:s}".format(
+        base=base,
+        path=path.lstrip("/"),
+    )
